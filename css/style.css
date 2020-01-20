@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+header {
+    height: 100px;
+    background-color: yellow;
+    margin: 12px 12px 12px 12px;
+}
+
+aside {
+    width: 25%;
+    height: 200px;
+    background-color: violet;
+    margin: 12px 12px 12px 12px;
+}
+
+main {
+    width: calc(50% - 72px);
+    height: 400px;
+    background-color: darkviolet;
+    margin: 12px 12px 12px 12px;
+    float: left;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: lightgreen;
+    margin: 12px 12px 12px 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right;
+}
